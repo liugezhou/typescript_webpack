@@ -1,0 +1,8 @@
+{
+  "compolerOptions":{
+    "outDir" : "./dist", //打包生成的文件为根目录下的dist文件(可不写，webpack已配置)
+    "module": "es6", // 引入模块的防方式：ESModule
+    "target:": "es5",  //打包生成的文件是ES5代码类型
+    "allowsJs": true // 允许引入js模块
+  }
+}
