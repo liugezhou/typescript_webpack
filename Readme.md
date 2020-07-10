@@ -6,7 +6,14 @@
 > 4. npm i ts-loader typescript -D
 > 5. npm i  @types/lodash -D  
 > 4与5的安装为对应的库与对应的库类型文件，可以给出一些警告。可以参考Github仓库：DefinitelyTyped，通过search匹配查询。
-> 6. npm run build
+> 6. npm run build    
+
+> 总结，通过这小小的一个demo：首先对webpack的配置打包在有一个整体的认识后，发现对于ts打包来说，配置极其简单 
+> + 需要npm install `typescript`，打包的module依赖的ts包为`ts-loader`。   
+> + ts需要一个tsconfig.json配置文件.    
+> + 如果ts需要使用第三方包：lodash/jquery等，除安装这些依赖外，还需要安装对应的类型文件。
+
+> 下面为简单demo的源码展示：
  ```
  // index.tsx
  import * as _ from 'lodash';
