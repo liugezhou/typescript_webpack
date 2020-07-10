@@ -1,20 +1,14 @@
 import * as _ from 'lodash';
 
-class Greeter {
-  greeting:string;
-  constructor(message:string){
-    this.greeting = message;
-  }
-  greet(){
-    return _.join(["Hello", ' ', this.greeting], '');
-  }
-}
+let { log } = console;
+let arrChunk = [1,2,3,4,5,6];
+let chunkArr = _.chunk(arrChunk,3);
+log('chunk',chunkArr);
 
-let greeter = new Greeter('world');
+let arrCompact =[1,0,false,'',2,3,false,undefined,4];
+let compactArr = _.compact(arrCompact)
+log('compact',compactArr)
 
-let button = document.createElement('button');
-// button.textContent ='Click ';
-// button.onclick = function(){
-  alert(greeter.greet());
-// }
-document.body.appendChild(button);
+let arrDiff1=['liugezhou','18','coding','stydy','rich'];
+let arrDiff2=['liugezhou','28','playing','study','rich'];
+log('diffrence',_.difference(arrDiff1,arrDiff2));
